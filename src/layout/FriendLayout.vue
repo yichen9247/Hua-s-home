@@ -30,5 +30,5 @@
 </script>
 
 <style lang="scss">
-    @import url("./FriendLayout.SCSS");
+    @import url("./FriendLayout.scss");
 </style>
