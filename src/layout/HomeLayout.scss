@@ -1,0 +1,68 @@
+div.layout-home {
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: space-between;
+
+    p.wel-text {
+        font-size: 52px;
+        line-height: 2.4;
+        font-weight: 900;
+        text-align: center;
+        letter-spacing: -1.5px;
+    }
+
+    div.button-box {
+        width: 100%;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        button.btn {
+            border: unset;
+            outline: unset;
+            height: inherit;
+            padding: 0 15px;
+            border-radius: 4px;
+            background-color: unset;
+        }
+
+        button.btn {
+            display: flex;
+            margin: 0 8px;
+            color: #ffffff;
+            align-items: center;
+        }
+
+        button.btn {
+            cursor: pointer;
+
+            svg {
+                width: 20px;
+                height: 20px;
+            }
+
+            span.btn-text {
+                margin-left: 10px;
+            }
+        }
+
+        button.github-btn {
+            background-color: #333333;
+        }
+
+        button.gitee-btn {
+            background-color: #C71D23;
+        }
+        
+        button.netease-btn {
+            background-color: #dd524d;
+        }
+
+        button.bilibili-btn {
+            background-color: #fb7299;
+        }
+    }
+}

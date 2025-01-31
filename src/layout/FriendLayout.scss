@@ -1,0 +1,54 @@
+div.layout-friend {
+    div.friend-list {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    
+        div.friend-list-item {
+            height: 75px;
+            display: flex;
+            cursor: pointer;
+            padding: 10px 15px;
+            border-radius: 4px;
+            margin-bottom: 15px;
+            width: calc(50% - 7.5px);
+            border: 2px solid #e3e8f7;
+
+            img.item-avatar {
+                width: 51.8px;
+                height: 51.8px;
+                border-radius: 4px;
+            }
+
+            div.item-content {
+                flex: 1;
+                height: 100%;
+                display: flex;
+                margin-left: 15px;
+                flex-direction: column;
+                justify-content: space-between;
+            
+                p.item-name {
+                    color: #333333;
+                    font-size: 18px;
+                }
+    
+                p.item-desc {
+                    line-clamp: 1;
+                    font-size: 14px;
+                    overflow: hidden;
+                    margin-top: 10px;
+                    color: #666666;
+                    line-height: 22px;
+                    text-align: justify;
+                    display: -webkit-box;
+                    word-break: break-all;
+                    -webkit-line-clamp: 1;
+                    text-overflow: ellipsis;
+                    -webkit-box-orient: vertical;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,63 @@
+div.model-user {
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../assets/bg-profile.jpg");
+
+    div.user-contianer {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        position: relative;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+
+        div.avatar-box {
+            width: 85px;
+            height: 85px;
+            cursor: pointer;
+            overflow: hidden;
+            border-radius: 50%;
+            border: 5px solid #ffffff;
+            
+            img.avatar-img {
+                width: 100%;
+                height: 100%;
+                transition: 1s;
+            }
+
+            &:hover {
+                img.avatar-img {
+                    transform: rotate(360deg);
+                }
+            }
+        }
+
+        p.user-profile {
+            margin-top: 10px;
+            color: #ffffff;
+            font-weight: bold;
+            text-align: center;
+            word-break: break-all;
+            text-shadow: #888 1px 1px 2px;
+        }
+
+        p.username {
+            font-size: 30px;
+        }
+
+        p.userdesc {
+            width: 75%;
+            line-clamp: 2;
+            font-size: 16px;
+            overflow: hidden;
+            line-height: 28px;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            text-overflow: ellipsis;
+            -webkit-box-orient: vertical;
+        }
+    }
+}

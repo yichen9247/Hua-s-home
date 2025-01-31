@@ -1,0 +1,16 @@
+div.layout-photo {
+    div.photo-list {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    
+        img.photo {
+            height: 150px;
+            cursor: pointer;
+            border-radius: 4px;
+            margin-bottom: 15px;
+            width: calc(50% - 7.5px);
+        }
+    }
+}

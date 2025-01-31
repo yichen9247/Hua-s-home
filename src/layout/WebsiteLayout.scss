@@ -1,0 +1,41 @@
+div.layout-website {
+    div.website-list {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    
+        div.website-list-item {
+            height: 102px;
+            display: flex;
+            cursor: pointer;
+            padding: 10px 15px;
+            border-radius: 4px;
+            margin-bottom: 15px;
+            flex-direction: column;
+            width: calc(50% - 7.5px);
+            border: 2px solid #e3e8f7;
+            justify-content: space-between;
+        
+            p.item-name {
+                color: #333333;
+                font-size: 18px;
+            }
+
+            p.item-desc {
+                line-clamp: 2;
+                font-size: 14px;
+                overflow: hidden;
+                margin-top: 10px;
+                color: #666666;
+                line-height: 22px;
+                text-align: justify;
+                display: -webkit-box;
+                word-break: break-all;
+                -webkit-line-clamp: 2;
+                text-overflow: ellipsis;
+                -webkit-box-orient: vertical;
+            }
+        }
+    }
+}
