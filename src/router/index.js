@@ -9,7 +9,7 @@ const router = createRouter({
       component: HomePage,
   }, {
       path: "/:catchAll(.*)",
-      component: () => HomePage,
+      component: HomePage,
   }]
 });
 
