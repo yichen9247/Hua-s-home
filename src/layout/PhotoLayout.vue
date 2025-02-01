@@ -4,7 +4,7 @@
             <img class="photo" loading="lazy" v-for="(item, index) in photoList" :key="index" :src="item.src" :alt="item.alt" @click="previewImage({
                 src: item.src,
                 html: item.alt
-            })">
+            })" draggable="false"/>
         </div>
     </div>
 </template>

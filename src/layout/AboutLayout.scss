@@ -1,12 +1,31 @@
 div.layout-anbout {
     div.user-description {
-        p {
+        p.description {
             font-size: 18px;
             text-indent: 2em;
             color: #666666;
             line-height: 36px;
             text-align: justify;
             word-break: break-all;
+        }
+
+        h2.title {
+            margin: 20px 0;
+            color: #666666;
+        }
+
+        div.badge-box {
+            width: 100%;
+            display: flex;
+            margin: 10px 0;
+            align-items: center;
+            justify-content: center;
+
+            img.badge {
+                height: 28px;
+                margin: 0 5px;
+                cursor: pointer;
+            }
         }
     }
 }
