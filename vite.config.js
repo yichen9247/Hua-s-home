@@ -9,12 +9,7 @@ import Components from 'unplugin-vue-components/vite'
 export default defineConfig({
   plugins: [
     vue(),
-    vueDevTools(),
-    Components({
-      dirs: ['src'],
-      extensions: ['vue', 'jsx'],
-      dts: 'application.d.ts',
-    }),
+    vueDevTools()
   ],
   resolve: {
     alias: {
