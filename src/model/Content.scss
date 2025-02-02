@@ -32,7 +32,6 @@ div.model-content {
     div.tab-content {
         flex: 1;
         width: 100%;
-        padding: 0 15px;
         overflow: hidden;
         margin-top: 20px;
         overflow-y: scroll;
@@ -41,6 +40,7 @@ div.model-content {
     
         div.layout-container {
             width: 100%;
+            padding: 0 15px;
             animation: card-in 1s ease;
         }
     }
