@@ -8,8 +8,8 @@ div.layout-photo {
         img.photo {
             height: 150px;
             cursor: pointer;
+            margin-top: 15px;
             border-radius: 4px;
-            margin-bottom: 15px;
             width: calc(50% - 7.5px);
         }
     }
