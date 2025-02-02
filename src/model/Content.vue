@@ -18,6 +18,7 @@
     import HomeLayout from '@/layout/HomeLayout.vue';
     import PhotoLayout from '@/layout/PhotoLayout.vue';
     import AboutLayout from '@/layout/AboutLayout.vue';
+    import OutSorLayout from '@/layout/OutSorLayout.vue';
     import FriendLayout from '@/layout/FriendLayout.vue';
     import WebsiteLayout from '@/layout/WebsiteLayout.vue';
     import ProjectLayout from '@/layout/ProjectLayout.vue';
@@ -30,6 +31,10 @@
         key: 'project',
         label: '项目',
         layout: markRaw(ProjectLayout)
+    }, {
+        key: 'outsor',
+        label: '外包',
+        layout: markRaw(OutSorLayout)
     }, {
         key: 'photo',
         label: '相册',

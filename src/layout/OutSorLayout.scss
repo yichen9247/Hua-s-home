@@ -1,0 +1,62 @@
+div.layout-outsor {
+    div.outsor-list {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    
+        div.outsor-list-item {
+            cursor: pointer;
+            overflow: hidden;
+            position: relative;
+            border-radius: 4px;
+            margin-bottom: 15px;
+            width: calc(50% - 7.5px);
+            border: 2px solid #e3e8f7;
+
+            div.item-image {
+                width: 100%;
+                height: 158px;
+                overflow: hidden;
+
+                img.screenshot {
+                    width: inherit;
+                    height: inherit;
+                    transition: transform 0.3s;
+                }
+            }
+
+            div.item-content {
+                bottom: 0;
+                width: 100%;
+                height: 75px;
+                display: flex;
+                color: #ffffff;
+                padding: 10px 15px;
+                position: absolute;
+                flex-direction: column;
+                justify-content: space-between;
+                background-color: rgba(0, 0, 0, 0.5);
+            
+                p.item-name {
+                    font-size: 18px;
+                }
+    
+                p.item-desc {
+                    font-size: 14px;
+                    margin-top: 10px;
+                    line-height: 22px;
+                    text-align: justify;
+                }
+            }
+
+            &:hover {
+                div.item-image {
+                    img.screenshot {
+                        transform: scale(1.25);
+                    }
+                }
+            }
+        }
+    }
+}
