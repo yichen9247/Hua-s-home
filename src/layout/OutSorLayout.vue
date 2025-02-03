@@ -24,6 +24,7 @@
     import Image_01 from "@/photo/outsor/PixPin_2025-02-02_23-16-24.png"
     import Image_02 from "@/photo/outsor/PixPin_2025-02-02_23-41-10.png"
     import Image_03 from "@/photo/outsor/PixPin_2025-02-02_23-49-41.png"
+    import Image_04 from "@/photo/outsor/PixPin_2025-02-03_12-23-26.png"
 
     const outsorList = reactive([{
         name: '梦希操作系统官网',
@@ -37,6 +38,10 @@
         name: 'AIDE PRO后台',
         desc: '技术栈：Spring + Mybatis + Redis（后端）',
         image: Image_03,
+    }, {
+        name: '智慧管理云平台',
+        desc: '技术栈：Vite + Vue3 + Nodejs（全栈）',
+        image: Image_04,
     }]);
 </script>
 
