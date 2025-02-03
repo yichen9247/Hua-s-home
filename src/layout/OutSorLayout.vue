@@ -1,12 +1,12 @@
 <template>
     <div class="layout-container layout-outsor">
         <div class="outsor-list">
-            <div class="outsor-list-item" v-for="(item, index) in outsorList" :key="index">
+            <div class="outsor-list-item" v-for="(item, index) in outsorList" :key="index" @click="previewImage({
+                    src: item.image,
+                    html: item.name
+                })">
                 <div class="item-image">
-                    <img class="screenshot" :src="item.image" :alt="item.name" @click="previewImage({
-                        src: item.image,
-                        html: item.name
-                    })" draggable="false">
+                    <img class="screenshot" :src="item.image" :alt="item.name" draggable="false">
                 </div>
                 <div class="item-content">
                     <p class="item-name">{{ item.name }}</p>
