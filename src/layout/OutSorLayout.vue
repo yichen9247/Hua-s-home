@@ -28,7 +28,7 @@
 
     const outsorList = reactive([{
         name: '梦希操作系统官网',
-        desc: '技术栈：Vite + Vue3（单页）',
+        desc: '技术栈：Vite + Vue3（前端）',
         image: Image_01,
     }, {
         name: 'AIDE PRO官网',
