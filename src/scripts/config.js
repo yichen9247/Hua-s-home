@@ -73,7 +73,7 @@ export default {
             image: OutSor_Image_02,
         }, {
             name: 'AIDE PRO后台',
-            desc: '技术栈：Spring + Mybatis + Redis（后端）',
+            desc: '技术栈：Spring + Mybatis Plus（后端）',
             image: OutSor_Image_03,
         }, {
             name: '智慧管理云平台',
