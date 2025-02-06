@@ -1,5 +1,6 @@
 <template>
-    <div class="layout-container layout-friend">
+    <div class="mobile-layout mobile-friend">
+        <TitleBox :title="config.friend.name"/>
         <div class="friend-list">
             <div class="friend-list-item" v-for="(item, index) in config.friend.data" :key="index" @click="openOtherSite(item.link)">
                 <img class="item-avatar" loading="lazy" :src="item.src" :alt="item.name" draggable="false">
@@ -14,9 +15,10 @@
 
 <script setup>
     import config from '@/scripts/config';
+    import TitleBox from '@/model/TitleBox.vue';
     import { openOtherSite } from '@/scripts/utils';
 </script>
 
 <style lang="scss">
-    @import url("./FriendLayout.scss");
+    @import url("./MobileFriend.scss");
 </style>

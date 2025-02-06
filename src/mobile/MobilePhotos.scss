@@ -1,0 +1,15 @@
+div.mobile-photos {
+    div.photo-list {
+        img.photo {
+            width: 100%;
+            height: 150px;
+            display: block;
+            margin-top: 20px;
+            border-radius: 4px;
+
+            &:first-child {
+                margin-top: 16px;
+            }
+        }
+    }
+}

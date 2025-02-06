@@ -13,6 +13,7 @@
 </template>
 
 <script setup>
+    import config from '@/scripts/config';
     import { markRaw, reactive, ref } from 'vue';
 
     import HomeLayout from '@/layout/HomeLayout.vue';
@@ -25,31 +26,31 @@
 
     const tabList = reactive([{
         key: 'home',
-        label: '主页',
+        label: config.home.name,
         layout: markRaw(HomeLayout)
     }, {
         key: 'project',
-        label: '项目',
+        label: config.project.name,
         layout: markRaw(ProjectLayout)
     }, {
         key: 'outsor',
-        label: '外包',
+        label: config.outsor.name,
         layout: markRaw(OutSorLayout)
     }, {
         key: 'photo',
-        label: '相册',
+        label: config.photos.name,
         layout: markRaw(PhotoLayout)
     }, {
         key: 'website',
-        label: '站点',
+        label: config.website.name,
         layout: markRaw(WebsiteLayout)
     }, {
         key: 'friends',
-        label: '友人',
+        label: config.friend.name,
         layout: markRaw(FriendLayout)
     }, {
         key: 'about',
-        label: '关于',
+        label: config.about.name,
         layout: markRaw(AboutLayout)
     }]);
 

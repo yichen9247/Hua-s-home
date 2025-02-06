@@ -2,16 +2,16 @@
     <div class="model-user">
         <div class="user-contianer">
             <div class="avatar-box">
-                <img class="avatar-img" src="../assets/avatar.jpg" alt="Hua" draggable="false">
+                <img class="avatar-img" :src="config.author.avatar" alt="Hua" draggable="false">
             </div>
-            <p class="user-profile username">Hua</p>
-            <p class="user-profile userdesc">一个无名小卒，擅长使用Java、Node等开发技术</p>
+            <p class="user-profile username">{{ config.author.name }}</p>
+            <p class="user-profile userdesc">{{ config.author.description }}</p>
         </div>
     </div>
 </template>
 
 <script setup>
-    
+    import config from '@/scripts/config';
 </script>
 
 <style lang="scss">

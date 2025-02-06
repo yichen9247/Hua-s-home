@@ -1,24 +1,18 @@
-div.layout-project {
+div.mobile-project {
     div.project-list {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    
         div.project-list-item {
+            width: 100%;
             height: 102px;
             display: flex;
-            cursor: pointer;
-            margin-top: 15px;
+            margin-top: 20px;
+            color: #ffffff;
             padding: 10px 15px;
             border-radius: 4px;
             flex-direction: column;
-            width: calc(50% - 7.5px);
             border: 2px solid #e3e8f7;
             justify-content: space-between;
-        
+
             p.item-name {
-                color: #333333;
                 font-size: 18px;
             }
 
@@ -27,7 +21,6 @@ div.layout-project {
                 font-size: 14px;
                 overflow: hidden;
                 margin-top: 10px;
-                color: #666666;
                 line-height: 22px;
                 text-align: justify;
                 display: -webkit-box;
@@ -35,6 +28,10 @@ div.layout-project {
                 -webkit-line-clamp: 2;
                 text-overflow: ellipsis;
                 -webkit-box-orient: vertical;
+            }
+
+            &:first-child {
+                margin-top: 15px;
             }
         }
     }

@@ -1,5 +1,6 @@
 <template>
-    <div class="layout-container layout-outsor">
+    <div class="mobile-layout mobile-outsor">
+        <TitleBox :title="config.outsor.name"/>
         <div class="outsor-list">
             <div class="outsor-list-item" v-for="(item, index) in config.outsor.data" :key="index" @click="previewImage({
                     src: item.image,
@@ -19,9 +20,10 @@
 
 <script setup>
     import config from '@/scripts/config';
+    import TitleBox from '@/model/TitleBox.vue';
     import { previewImage } from '@/scripts/utils';
 </script>
 
 <style lang="scss">
-    @import url("./OutSorLayout.scss");
+    @import url("./MobileOutSor.scss");
 </style>
