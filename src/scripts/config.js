@@ -89,10 +89,10 @@ export default {
             data: ['Html5', 'CSS3', 'JavaScript', 'Vue', 'React', 'PHP', 'Vite', 'NodeJS', 'NextJS', 'Ajax', 'JQuery', 'Echarts', 'TypeScript']
         }, {
             name: '后端技术',
-            data: ['Spring', 'PHP', 'NodeJs', 'Redis', 'MySQL', 'MyBatis', 'RestFul API']
+            data: ['Spring', 'PHP', 'NodeJs', 'Redis', 'MySQL', 'MyBatis', 'RestFul API', 'Java', 'Kotlin']
         }, {
             name: '软件开发',
-            data: ['Android', 'HarmonyOS', 'JetPack Compose', 'Uniapp', 'ArkTs', 'ArkUI']
+            data: ['Java', 'Kotlin', 'Android', 'HarmonyOS', 'JetPack Compose', 'Uniapp', 'ArkTs', 'ArkUI']
         }, {
             name: '软件设计',
             data: ['Adobe XD', 'Axure RP', 'PhotoShop']
