@@ -101,7 +101,7 @@ export default {
             data: ['Java', 'Kotlin', 'Python', 'PHP', 'C', 'Html5', 'CSS3', 'JavaScript', 'TypeScript', 'GO（基础）', 'C++（基础）', 'Rust（基础）']
         }, {
             name: '其它技术',
-            data: ['Git（基础）', 'Linux（基础）', 'Gradle（基础）', 'Maven（基础）']
+            data: ['WebSocket', 'Socket.IO', 'Git（基础）', 'Linux（基础）', 'Gradle（基础）', 'Maven（基础）', 'AI+']
         }]
     },
 
