@@ -22,11 +22,12 @@
     import MobilePhotos from '@/mobile/MobilePhotos.vue';
     import MobileFriend from '@/mobile/MobileFriend.vue';
     import MobileProject from '@/mobile/MobileProject.vue';
+    import MobileMySkill from '@/mobile/MobileMySkill.vue';
     import MobileWebsite from '@/mobile/MobileWebsite.vue';
     import { useApplicationStore } from '@/stores/applicationStore';
     
     const mobileLayoutList = reactive([
-        markRaw(MobileHome),markRaw(MobileProject),markRaw(MobileWebsite),markRaw(MobileOutSor),markRaw(MobileFriend),markRaw(MobilePhotos),markRaw(MobileAbout)
+        markRaw(MobileHome),markRaw(MobileProject),markRaw(MobileWebsite),markRaw(MobileOutSor),markRaw(MobileMySkill),markRaw(MobileFriend),markRaw(MobilePhotos),markRaw(MobileAbout)
     ]);
     const applicationStore = useApplicationStore();
 </script>

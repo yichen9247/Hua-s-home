@@ -23,6 +23,7 @@
     import FriendLayout from '@/layout/FriendLayout.vue';
     import WebsiteLayout from '@/layout/WebsiteLayout.vue';
     import ProjectLayout from '@/layout/ProjectLayout.vue';
+    import MySkillLayout from '@/layout/MySkillLayout.vue';
 
     const tabList = reactive([{
         key: 'home',
@@ -36,6 +37,10 @@
         key: 'outsor',
         label: config.outsor.name,
         layout: markRaw(OutSorLayout)
+    }, {
+        key: 'mySkill',
+        label: config.mySkill.name,
+        layout: markRaw(MySkillLayout)
     }, {
         key: 'photo',
         label: config.photos.name,

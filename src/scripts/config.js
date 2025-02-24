@@ -82,6 +82,29 @@ export default {
         }]
     },
 
+    mySkill: {
+        name: '技能',
+        data: [{
+            name: '前端技术',
+            data: ['Html5', 'CSS3', 'JavaScript', 'Vue', 'React', 'PHP', 'Vite', 'NodeJS', 'NextJS', 'Ajax', 'JQuery', 'Echarts', 'TypeScript']
+        }, {
+            name: '后端技术',
+            data: ['Spring', 'PHP', 'NodeJs', 'Redis', 'MySQL', 'MyBatis', 'RestFul API']
+        }, {
+            name: '软件开发',
+            data: ['Android', 'HarmonyOS', 'JetPack Compose', 'Uniapp', 'ArkTs', 'ArkUI']
+        }, {
+            name: '软件设计',
+            data: ['Adobe XD', 'Axure RP', 'PhotoShop']
+        }, {
+            name: '编程语言',
+            data: ['Java', 'Kotlin', 'Python', 'PHP', 'C', 'Html5', 'CSS3', 'JavaScript', 'TypeScript', 'GO', 'C++（基础）', 'Rust（基础）']
+        }, {
+            name: '其它技术',
+            data: ['Git（基础）', 'Linux（基础）', 'Gradle（基础）', 'Maven（基础）']
+        }]
+    },
+
     friend: {
         name: '友人',
         data: [{

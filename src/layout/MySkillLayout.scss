@@ -1,0 +1,33 @@
+div.layout-mySkill {
+    width: 100%;
+
+    div.skill-main {
+        margin-top: 15px;
+
+        div.skill-block {
+            width: 100%;
+    
+            p.block-name {
+                color: #858585;
+                margin-bottom: 15px;
+                letter-spacing: 2.5px;
+            }
+    
+            div.skill-list {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+    
+                span.skill-item {
+                    cursor: pointer;
+                    color: #858585;
+                    padding: 5px 10px;
+                    border-radius: 4px;
+                    margin-bottom: 15px;
+                    margin-right: 15px;
+                    border: 2px solid #e3e8f7;
+                }
+            }
+        }
+    }
+}
