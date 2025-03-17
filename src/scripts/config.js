@@ -33,6 +33,10 @@ export default {
             name: 'Handsock',
             repo: 'https://github.com/yichen9247/HandSock',
             desc: '一款有趣的聊天应用，基于 Typescript，Mybatis-Plus，Springboot, Vue3 和 Socket.io，Redis 等技术开发'
+        }, {
+            name: 'Desktop Clock',
+            repo: 'https://github.com/yichen9247/Desktop-Clock',
+            desc: '由于工作室里多出了一台电脑，我一直在思考如何更好地利用它，如果只是让它闲置，未免有些浪费，于是，我决定亲自动手编写一个既美观又实用的桌面时钟'
         }]
     },
 
@@ -92,7 +96,7 @@ export default {
             data: ['Spring', 'PHP', 'NodeJs', 'Redis', 'MySQL', 'MyBatis', 'RestFul API', 'Java', 'Kotlin']
         }, {
             name: '软件开发',
-            data: ['Java', 'Kotlin', 'Android', 'HarmonyOS', 'JetPack Compose', 'Uniapp', 'ArkTs', 'ArkUI']
+            data: ['Java', 'Kotlin', 'Android', 'HarmonyOS', 'JetPack Compose', 'Uniapp', 'ArkTs', 'ArkUI', 'Compose Desktop']
         }, {
             name: '软件设计',
             data: ['Adobe XD', 'Axure RP', 'PhotoShop']
@@ -101,7 +105,7 @@ export default {
             data: ['Java', 'Kotlin', 'Python', 'PHP', 'C', 'Html5', 'CSS3', 'JavaScript', 'TypeScript', 'GO（基础）', 'C++（基础）', 'Rust（基础）']
         }, {
             name: '其它技术',
-            data: ['WebSocket', 'Socket.IO', 'Git（基础）', 'Linux（基础）', 'Gradle（基础）', 'Maven（基础）', 'AI+']
+            data: ['WebSocket', 'Socket.IO', 'Git（基础）', 'Linux（基础）', 'Gradle（基础）', 'Maven（基础）', 'Docker（基础）', 'AI+']
         }]
     },
 
