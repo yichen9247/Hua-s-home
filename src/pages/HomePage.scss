@@ -4,6 +4,7 @@ div.main-container {
     display: grid;
 
     div.main-box {
+        z-index: 2;
         margin: auto;
         width: 1024px;
         height: 480px;

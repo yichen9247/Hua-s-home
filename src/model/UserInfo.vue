@@ -7,6 +7,9 @@
             <p class="user-profile username">{{ config.author.name }}</p>
             <p class="user-profile userdesc">{{ config.author.description }}</p>
         </div>
+        <footer class="footer-container" v-if="config.footer.showIcp">
+            <a href="https://beian.miit.gov.cn" target="_blank">{{ config.footer.icpText }}</a>
+        </footer>
     </div>
 </template>
 

@@ -1,7 +1,7 @@
 <template>
     <div class="model-footbox">
-        <p class="copyright" v-html="config.footer.copyright"></p>
-        <p v-if="config.footer.showThemeBy">Theme By <a href="https://github.com/yichen9247/Hua-s-home" target="_blank">Hua's home</a></p>
+        <p v-if="config.footer.showThemeBy">Theme by <a href="https://github.com/yichen9247/Hua-s-home" target="_blank">Hua's home</a></p>
+        <a href="https://beian.miit.gov.cn" target="_blank" v-if="config.footer.showIcp">{{ config.footer.icpText }}</a>
     </div>
 </template>
 
