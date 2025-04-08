@@ -44,7 +44,7 @@ export default {
         name: '站点',
         data: [{
             name: 'Handsock演示站点',
-            link: 'https://handsock.xiaokolomi.cn',
+            link: 'https://im.yunair.cn',
             desc: '项目HandSock的演示站点，因服务器即将到期，后端服务将在两个月之后关闭'
         }, {
             name: 'Handsock官方文档',
