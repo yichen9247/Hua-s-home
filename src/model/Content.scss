@@ -3,6 +3,7 @@ div.model-content {
     height: 100%;
     display: flex;
     padding: 20px;
+    padding-bottom: 0;
     flex-direction: column;
 
     div.tab-container {
@@ -11,7 +12,7 @@ div.model-content {
         display: flex;
         overflow: hidden;
         overflow-x: scroll;
-        border-radius: 4px;
+        border-radius: 6px;
         border: 2px solid #e3e8f7;
     
         div.tab-box {
@@ -35,12 +36,12 @@ div.model-content {
         overflow: hidden;
         margin-top: 20px;
         overflow-y: scroll;
-        border-radius: 4px;
+        border-radius: 6px;
         border: 2px solid #e3e8f7;
     
         div.layout-container {
             width: 100%;
-            padding: 0 15px;
+            padding: 0 20px;
             animation: card-in 1s ease;
         }
     }

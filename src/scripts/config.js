@@ -151,7 +151,6 @@ export default {
 
     footer: {
         showIcp: true,
-        showThemeBy: true,
-        icpText: "蜀ICP备2025133319号-1"
+        icpText: "蜀ICP备2025133319号"
     }
 }

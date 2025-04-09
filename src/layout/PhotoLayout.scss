@@ -6,11 +6,11 @@ div.layout-photo {
         justify-content: space-between;
     
         img.photo {
-            height: 150px;
+            height: 160px;
             cursor: pointer;
-            margin-top: 15px;
-            border-radius: 4px;
-            width: calc(50% - 7.5px);
+            margin-top: 20px;
+            border-radius: 6px;
+            width: calc(50% - 10px);
         }
     }
 }

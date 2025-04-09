@@ -7,10 +7,22 @@ div.model-footbox {
     background-color: rgba(23, 24, 32, 0.5);
 
     p, a {
-        width: 100%;
         color: #ffffff;
         font-size: 17px;
         line-height: 36px;
         text-align: center;
+    }
+
+    p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img.beian-icon {
+            height: 20px;
+            margin-right: 8px;
+            margin-bottom: 0.75px;
+            background-color: unset;
+        }
     }
 }
