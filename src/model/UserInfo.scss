@@ -1,10 +1,17 @@
 div.model-user {
     height: 100%;
-    position: relative;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url("../assets/bg-profile.jpg");
+    padding-top: 20px;
+    padding-left: 20px;
+
+    div.user-box {
+        height: 100%;
+        position: relative;
+        border-radius: 6px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url("../assets/bg-profile.jpg");
+    }
 
     div.user-contianer {
         width: 100%;
