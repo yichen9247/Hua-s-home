@@ -45,7 +45,7 @@ export default {
         data: [{
             name: 'Handsock演示站点',
             link: 'https://im.yunair.cn',
-            desc: '项目HandSock的演示站点，因服务器即将到期，后端服务将在两个月之后关闭'
+            desc: 'HandSock是一款有趣且开源的聊天应用，集聊天室和社区为一体，基于 Springboot、Vue3、TypeScript 等技术开发'
         }, {
             name: 'Handsock官方文档',
             link: 'https://doc.handsock.xiaokolomi.cn',
