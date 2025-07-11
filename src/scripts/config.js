@@ -8,6 +8,7 @@ import OutSor_Image_01 from "@/photo/outsor/PixPin_2025-02-02_23-16-24.png"
 import OutSor_Image_02 from "@/photo/outsor/PixPin_2025-02-02_23-41-10.png"
 import OutSor_Image_03 from "@/photo/outsor/PixPin_2025-02-02_23-49-41.png"
 import OutSor_Image_04 from "@/photo/outsor/PixPin_2025-02-03_12-23-26.png"
+import OutSor_Image_05 from "@/photo/outsor/PixPin_2025-07-11_10-16-22.png"
 
 export default {
     home: {
@@ -30,9 +31,9 @@ export default {
     project: {
         name: '项目',
         data: [{
-            name: 'Handsock',
+            name: 'YunChat',
             repo: 'https://github.com/yichen9247/HandSock',
-            desc: '一款有趣的聊天应用，基于 Typescript，Mybatis-Plus，Springboot, Vue3 和 Socket.io，Redis 等技术开发'
+            desc: '一款有趣且开源的聊天应用，基于 Springboot、Vite、TypeScript、Redis 等技术开发'
         }, {
             name: 'Desktop Clock',
             repo: 'https://github.com/yichen9247/Desktop-Clock',
@@ -43,13 +44,13 @@ export default {
     website: {
         name: '站点',
         data: [{
-            name: 'Handsock演示站点',
+            name: 'YunChat演示站点',
             link: 'https://im.yunair.cn',
             desc: 'HandSock是一款有趣且开源的聊天应用，集聊天室和社区为一体，基于 Springboot、Vue3、TypeScript 等技术开发'
         }, {
-            name: 'Handsock官方文档',
+            name: 'YunChat官方文档',
             link: 'https://doc.handsock.xiaokolomi.cn',
-            desc: '项目HandSock的官方文档，不会搭建或者想要了解本项目的可以进入文档查看'
+            desc: '项目YunChat的官方文档，不会搭建或者想要了解本项目的可以进入文档查看'
         }, {
             name: '头像生成工作站',
             link: 'https://avatar.xiaokolomi.cn',
@@ -75,6 +76,10 @@ export default {
             name: '智慧管理云平台',
             desc: '技术栈：Vite + Vue3 + Nodejs（全栈）',
             image: OutSor_Image_04,
+        }, {
+            name: '黑名单管理系统',
+            desc: '技术栈：Vite + Java + Springboot（全栈）',
+            image: OutSor_Image_05,
         }]
     },
 
@@ -146,7 +151,7 @@ export default {
             name: 'yichen9247',
             logo: 'WeChat',
         }],
-        data: '各位好，我是Hua，具备全栈开发能力的准大一新生，主攻现代前端工程化方向。擅长使用Vue/React生态体系（Vite/Next.js）构建响应式Web应用，对TypeScript工程化与前端状态管理有实战经验。坚持Clean Code原则，熟悉Git协作流程与CI/CD部署，近期正深入Node.js后端开发以完善全栈能力。我的GitHub持续更新技术实践，欢迎通过Issue或PR进行技术探讨。'
+        data: '各位好，我是Hua，具备全栈开发能力的大一新生，主攻现代前端工程化方向。擅长使用Vue/React生态体系（Vite/Next.js）构建响应式Web应用，对TypeScript工程化与前端状态管理有实战经验。坚持Clean Code原则，熟悉Git协作流程与CI/CD部署，近期正深入Node.js后端开发以完善全栈能力。我的GitHub持续更新技术实践，欢迎通过Issue或PR进行技术探讨。'
     },
 
     footer: {
