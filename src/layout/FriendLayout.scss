@@ -7,11 +7,11 @@ div.layout-friend {
         justify-content: space-between;
     
         div.friend-list-item {
-            height: 75px;
+            height: 85px;
             display: flex;
+            padding: 15px;
             cursor: pointer;
             margin-top: 20px;
-            padding: 10px 15px;
             border-radius: 6px;
             width: calc(50% - 10px);
             border: 2px solid #e3e8f7;

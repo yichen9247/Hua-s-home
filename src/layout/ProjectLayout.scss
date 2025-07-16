@@ -7,11 +7,11 @@ div.layout-project {
         justify-content: space-between;
     
         div.project-list-item {
-            height: 102px;
+            height: 110px;
+            padding: 15px;
             display: flex;
             cursor: pointer;
             margin-top: 20px;
-            padding: 10px 15px;
             border-radius: 6px;
             flex-direction: column;
             width: calc(50% - 10px);
