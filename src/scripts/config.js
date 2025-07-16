@@ -1,6 +1,7 @@
 
 
 import avatar from "@/assets/avatar.jpg"
+import Friend_Image01 from "@/photo/friend/mizhiyun.jpg"
 import Photos_Image01 from "@/photo/IMG_20240211_191014.jpg"
 import Photos_Image02 from "@/photo/IMG_20240209_145206.jpg"
 
@@ -118,6 +119,11 @@ export default {
             link: 'https://m.senlinm.cn',
             src: 'https://senlinm.s3.us-east-005.backblazeb2.com/01.png',
             desc: '轻生活，秒上签'
+        }, {
+            name: '青岛米执云网络科技',
+            link: 'https://www.mizhiyun.cloud',
+            src: Friend_Image01,
+            desc: '一家专注于APP、web、安卓/ios、小程序开发，技术咨询服务以及技术支持服务的公司'
         }]
     },
 
