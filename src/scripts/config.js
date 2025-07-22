@@ -34,7 +34,7 @@ export default {
         data: [{
             name: 'YunChat',
             repo: 'https://github.com/yichen9247/HandSock',
-            desc: '一款有趣且开源的聊天应用，基于 Springboot、Vite、TypeScript、Redis 等技术开发'
+            desc: '一款有趣且开源的聊天应用，基于 Springboot、Vite、TypeScript、Redis、Socket.IO、Kotlin等技术开发'
         }, {
             name: 'Desktop Clock',
             repo: 'https://github.com/yichen9247/Desktop-Clock',
@@ -47,7 +47,7 @@ export default {
         data: [{
             name: 'YunChat演示站点',
             link: 'https://im.yunair.cn',
-            desc: 'HandSock是一款有趣且开源的聊天应用，集聊天室和社区为一体，基于 Springboot、Vue3、TypeScript 等技术开发'
+            desc: '一款有趣且开源的聊天应用，基于 Springboot、Vite、TypeScript、Redis、Socket.IO、Kotlin等技术开发'
         }, {
             name: 'YunChat官方文档',
             link: 'https://doc.handsock.xiaokolomi.cn',
