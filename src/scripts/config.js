@@ -50,7 +50,7 @@ export default {
             desc: '一款有趣且开源的聊天应用，基于 Springboot、Vite、TypeScript、Redis、Socket.IO、Kotlin等技术开发'
         }, {
             name: 'YunChat官方文档',
-            link: 'https://doc.handsock.xiaokolomi.cn',
+            link: 'https://doc.im.xiaokolomi.cn',
             desc: '项目YunChat的官方文档，不会搭建或者想要了解本项目的可以进入文档查看'
         }, {
             name: '头像生成工作站',
