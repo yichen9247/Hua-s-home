@@ -32,6 +32,13 @@ div.mobile-mySkill {
                     border: 2px solid #e3e8f7;
                 }
             }
+
+
+            &:last-child {
+                span.skill-item {
+                    margin-bottom: unset;
+                }
+            }
         }
     }
 }

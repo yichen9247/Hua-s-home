@@ -52,10 +52,6 @@ export default {
             name: 'YunChat官方文档',
             link: 'https://doc.im.xiaokolomi.cn',
             desc: '项目YunChat的官方文档，不会搭建或者想要了解本项目的可以进入文档查看'
-        }, {
-            name: '头像生成工作站',
-            link: 'https://avatar.xiaokolomi.cn',
-            desc: '一个可以随机生成不同风格的头像网站，你可以随机生成不同形状和颜色的头像'
         }]
     },
 
