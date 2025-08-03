@@ -1,5 +1,3 @@
-
-
 import avatar from "@/assets/avatar.jpg"
 import Friend_Image01 from "@/photo/friend/mizhiyun.jpg"
 import Photos_Image01 from "@/photo/IMG_20240211_191014.jpg"
@@ -120,6 +118,11 @@ export default {
             link: 'https://www.mizhiyun.cloud',
             src: Friend_Image01,
             desc: '一家专注于APP、web、安卓/ios、小程序开发，技术咨询服务以及技术支持服务的公司'
+        }, {
+            name: '林梦晓的个人主页',
+            link: 'https://gdtny.asia',
+            src: "https://gdtny.asia/w.jpg",
+            desc: '一个六年级小学生的个人主页'
         }]
     },
 
