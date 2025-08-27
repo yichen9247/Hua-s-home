@@ -5,7 +5,6 @@
                 <span class="tab-name" :style="{ color: tabSelect === item.key ? 'var(--dominColor)' : '#858585' }">{{ item.label }}</span>
             </div>
         </div>
-
         <div class="tab-content">
             <component :is="tabList.find(item => item.key === tabSelect).layout" />
         </div>

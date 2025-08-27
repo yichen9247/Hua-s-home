@@ -9,6 +9,20 @@ import OutSor_Image_03 from "@/photo/outsor/PixPin_2025-02-02_23-49-41.png"
 import OutSor_Image_04 from "@/photo/outsor/PixPin_2025-02-03_12-23-26.png"
 import OutSor_Image_05 from "@/photo/outsor/PixPin_2025-07-11_10-16-22.png"
 
+import Photos_2025_Image01 from "@/photo/2025/IMG_20250823_122611.jpg"
+import Photos_2025_Image02 from "@/photo/2025/IMG_20250823_132656.jpg"
+import Photos_2025_Image03 from "@/photo/2025/IMG_20250823_185610.jpg"
+import Photos_2025_Image04 from "@/photo/2025/IMG_20250823_183837.jpg"
+import Photos_2025_Image05 from "@/photo/2025/IMG_20250812_150517.jpg"
+import Photos_2025_Image06 from "@/photo/2025/IMG_20250812_150938.jpg"
+
+import Photos_skills_Image01 from "@/photo/skills-competition/Image_1756006328108.jpg"
+import Photos_skills_Image02 from "@/photo/skills-competition/Image_1756006318405.jpg"
+import Photos_skills_Image03 from "@/photo/skills-competition/Image_1756006291470.jpg"
+import Photos_skills_Image04 from "@/photo/skills-competition/Image_1756006307927.jpg"
+import Photos_skills_Image05 from "@/photo/skills-competition/Image_1756107605745.jpg"
+import Photos_skills_Image06 from "@/photo/skills-competition/Image_1756107608390.jpg"
+
 export default {
     home: {
         name: '主页',
@@ -124,6 +138,42 @@ export default {
     photos: {
         name: '相册',
         data: [{
+            alt: '重庆市江北国际机场 - 荣誉接机',
+            src: Photos_skills_Image06
+        }, {
+            alt: '重庆市江北国际机场 - 荣誉接机',
+            src: Photos_skills_Image05
+        }, {
+            alt: '世界职业院校技能大赛 - 中职组',
+            src: Photos_skills_Image04
+        }, {
+            alt: '世界职业院校技能大赛 - 中职组',
+            src: Photos_skills_Image03
+        }, {
+            alt: '世界职业院校技能大赛 - 中职组',
+            src: Photos_skills_Image02
+        }, {
+            alt: '世界职业院校技能大赛 - 中职组',
+            src: Photos_skills_Image01
+        }, {
+            alt: '2025年8月23日 - 南京玄武湖',
+            src: Photos_2025_Image01
+        }, {
+            alt: '2025年8月23日 - 南京玄武湖',
+            src: Photos_2025_Image02
+        }, {
+            alt: '2025年8月23日 - 南京夫子庙',
+            src: Photos_2025_Image03
+        }, {
+            alt: '2025年8月23日 - 南京夫子庙',
+            src: Photos_2025_Image04
+        }, {
+            alt: '2025年8月12日 - 大连星海广场',
+            src: Photos_2025_Image05
+        }, {
+            alt: '2025年8月12日 - 大连星海广场',
+            src: Photos_2025_Image06
+        }, {
             alt: 'Hua Image',
             src: Photos_Image01
         }, {
@@ -151,7 +201,7 @@ export default {
             name: 'yichen9247',
             logo: 'WeChat',
         }],
-        data: '各位好，我是Hua，具备全栈开发能力的大一新生，主攻现代前端工程化方向。擅长使用Vue/React生态体系（Vite/Next.js）构建响应式Web应用，对TypeScript工程化与前端状态管理有实战经验。坚持Clean Code原则，熟悉Git协作流程与CI/CD部署，近期正深入Node.js后端开发以完善全栈能力。我的GitHub持续更新技术实践，欢迎通过Issue或PR进行技术探讨。'
+        data: '各位好，我是Hua，具备全栈开发能力的大一新生，主攻现代前端工程化方向。擅长使用Vue/React生态体系（Vite/Next.js）构建响应式Web应用，对TypeScript工程化与前端状态管理有实战经验。坚持Clean Code原则，熟悉Git协作流程与CI/CD部署，近期正深入Java后端开发以完善全栈能力。我的GitHub持续更新技术实践，欢迎通过Issue或PR进行技术探讨。'
     },
 
     footer: {

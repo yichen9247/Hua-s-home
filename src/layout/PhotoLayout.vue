@@ -1,7 +1,7 @@
 <template>
     <div class="layout-container layout-photo">
         <div class="photo-list">
-            <img class="photo" loading="lazy" v-for="(item, index) in config.photos.data" :key="index" :src="item.src" :alt="item.alt" @click="previewImage({
+            <img class="photo" v-for="(item, index) in config.photos.data" :key="index" v-lazy="item.src" :alt="item.alt" @click="previewImage({
                 src: item.src,
                 html: item.alt
             })" draggable="false"/>

@@ -10,7 +10,6 @@
 
 <script setup>
     import config from '@/scripts/config';
-    import beianIcon from "@/assets/beian.png";
 </script>
 
 <style lang="scss">

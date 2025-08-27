@@ -7,7 +7,7 @@
                     html: item.name
                 })">
                 <div class="item-image">
-                    <img class="screenshot" :src="item.image" :alt="item.name" draggable="false">
+                    <img class="screenshot" v-lazy="item.image" :alt="item.name" draggable="false">
                 </div>
                 <div class="item-content">
                     <p class="item-name">{{ item.name }}</p>

@@ -2,7 +2,7 @@
     <div class="layout-container layout-friend">
         <div class="friend-list">
             <div class="friend-list-item" v-for="(item, index) in config.friend.data" :key="index" @click="openOtherSite(item.link)">
-                <img class="item-avatar" loading="lazy" :src="item.src" :alt="item.name" draggable="false">
+                <img class="item-avatar" v-lazy="item.src" :alt="item.name" draggable="false">
                 <div class="item-content">
                     <p class="item-name">{{ item.name }}</p>
                     <p class="item-desc">{{ item.desc }}</p>
