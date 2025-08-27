@@ -7,7 +7,7 @@
             </div>
             <footer class="footer" v-if="!applicationStore.isDeviceMobile">
                 <span>
-                    <img class="beian-icon" v-lazy="beianIcon" alt="川公网安备51050402000373号">
+                    <img class="beian-icon" :src="beianIcon" alt="川公网安备51050402000373号">
                     <a href="https://beian.mps.gov.cn/#/query/webSearch?code=51050402000373" rel="noreferrer" target="_blank">川公网安备51050402000373号</a>
                 </span>
                 <a href="https://beian.miit.gov.cn" rel="noreferrer" target="_blank">{{ config.footer.icpText }}</a>

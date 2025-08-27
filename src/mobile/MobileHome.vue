@@ -1,7 +1,7 @@
 <template>
     <div class="mobile-layout mobile-home">
         <div class="avatar-box">
-            <img class="avatar-img" v-lazy="config.author.avatar" alt="Hua" draggable="false">
+            <img class="avatar-img" :src="config.author.avatar" alt="Hua" draggable="false">
         </div>
         <p class="user-profile username">{{ config.author.name }}</p>
         <p class="user-profile userdesc">{{ config.author.description }}</p>
