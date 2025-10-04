@@ -1,0 +1,25 @@
+section.home-head {
+    width: 100%;
+    padding: 8rem 4rem;
+
+    div.head-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        img.user-avatar {
+            width: 105px;
+            height: 105px;
+            margin: 0 auto;
+            border-radius: 50%;
+        }
+
+        h1.welcome-text {
+            color: #ffffff;
+            font-size: 3rem;
+            text-align: center;
+            margin-top: 1.5rem;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    }
+}

@@ -1,5 +1,4 @@
 import avatar from "@/assets/avatar.jpg"
-import Friend_Image01 from "@/photo/friend/mizhiyun.jpg"
 import Photos_Image01 from "@/photo/IMG_20240211_191014.jpg"
 import Photos_Image02 from "@/photo/IMG_20240209_145206.jpg"
 
@@ -47,6 +46,10 @@ export default {
             name: 'YunChat',
             repo: 'https://github.com/yichen9247/HandSock',
             desc: '一款有趣且开源的聊天应用，基于 Springboot、Vite、TypeScript、Redis、Socket.IO、Kotlin等技术开发'
+        }, {
+            name: 'LoginCqcfe',
+            repo: 'https://github.com/yichen9247/LoginCqcfe',
+            desc: '重庆财经职业学院校园网络一键登录系统，非官方系统，仅用于学习和研究'
         }, {
             name: 'Desktop Clock',
             repo: 'https://github.com/yichen9247/Desktop-Clock',
@@ -127,11 +130,6 @@ export default {
             link: 'https://m.senlinm.cn',
             src: 'https://senlinm.s3.us-east-005.backblazeb2.com/01.png',
             desc: '轻生活，秒上签'
-        }, {
-            name: '青岛米执云网络科技',
-            link: 'https://www.mizhiyun.cloud',
-            src: Friend_Image01,
-            desc: '一家专注于APP、web、安卓/ios、小程序开发，技术咨询服务以及技术支持服务的公司'
         }]
     },
 

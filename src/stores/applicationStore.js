@@ -12,6 +12,5 @@ onresize = () => {
 export const useApplicationStore = defineStore('applicationStore', () => {
     const isDeviceMobile = ref(isMobile());
     const setIsDeviceMobile = (value) => isDeviceMobile.value = value;
-
     return ({ isDeviceMobile, setIsDeviceMobile });
 });

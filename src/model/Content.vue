@@ -1,64 +1,48 @@
 <template>
     <div class="model-content">
         <div class="tab-container">
-            <div class="tab-box" v-for="(item, index) in tabList" :key="index" @click="tabSelect = item.key">
-                <span class="tab-name" :style="{ color: tabSelect === item.key ? 'var(--dominColor)' : '#858585' }">{{ item.label }}</span>
+            <div class="tab-box" v-for="(item, index) in tabList" :key="index" @click="router.push({ name: item.key })">
+                <span class="tab-name" :style="{ color: route.name === item.key ? 'var(--dominColor)' : '#858585' }">{{ item.label }}</span>
             </div>
         </div>
         <div class="tab-content">
-            <component :is="tabList.find(item => item.key === tabSelect).layout" />
+            <router-view/>
         </div>
     </div>
 </template>
 
 <script setup>
+    import { reactive } from 'vue';
     import config from '@/scripts/config';
-    import { markRaw, reactive, ref } from 'vue';
+    import { useRoute, useRouter } from 'vue-router';
 
-    import HomeLayout from '@/layout/HomeLayout.vue';
-    import PhotoLayout from '@/layout/PhotoLayout.vue';
-    import AboutLayout from '@/layout/AboutLayout.vue';
-    import OutSorLayout from '@/layout/OutSorLayout.vue';
-    import FriendLayout from '@/layout/FriendLayout.vue';
-    import WebsiteLayout from '@/layout/WebsiteLayout.vue';
-    import ProjectLayout from '@/layout/ProjectLayout.vue';
-    import MySkillLayout from '@/layout/MySkillLayout.vue';
-
+    const route = useRoute();
+    const router = useRouter();
     const tabList = reactive([{
         key: 'home',
-        label: config.home.name,
-        layout: markRaw(HomeLayout)
+        label: config.home.name
     }, {
         key: 'project',
-        label: config.project.name,
-        layout: markRaw(ProjectLayout)
+        label: config.project.name
     }, {
         key: 'outsor',
-        label: config.outsor.name,
-        layout: markRaw(OutSorLayout)
+        label: config.outsor.name
     }, {
         key: 'mySkill',
-        label: config.mySkill.name,
-        layout: markRaw(MySkillLayout)
+        label: config.mySkill.name
     }, {
         key: 'photo',
-        label: config.photos.name,
-        layout: markRaw(PhotoLayout)
+        label: config.photos.name
     }, {
         key: 'website',
-        label: config.website.name,
-        layout: markRaw(WebsiteLayout)
+        label: config.website.name
     }, {
         key: 'friends',
-        label: config.friend.name,
-        layout: markRaw(FriendLayout)
+        label: config.friend.name
     }, {
         key: 'about',
-        label: config.about.name,
-        layout: markRaw(AboutLayout)
+        label: config.about.name
     }]);
-
-    const tabSelect = ref('home');
 </script>
 
 <style lang="scss">
