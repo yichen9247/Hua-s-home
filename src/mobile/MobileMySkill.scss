@@ -1,44 +1,229 @@
 div.mobile-mySkill {
-    width: 100%;
+    padding: 60px 20px 40px;
 
-    div.skill-main {
-        margin-top: 15px;
+    .skill-grid {
+        gap: 25px;
+        display: grid;
+        margin: 0 auto;
+        max-width: 500px;
+        grid-template-columns: 1fr;
 
-        div.skill-block {
-            width: 100%;
-    
-            p.block-name {
-                font-size: 18px;
-                color: #ffffff;
-                margin-bottom: 15px;
-                letter-spacing: 2.5px;
+        .skill-category {
+            padding: 20px;
+            border-radius: 12px;
+            background: #ffffff;
+            border: 2px solid #e3e8f7;
+            animation-delay: var(--delay);
+            -webkit-tap-highlight-color: transparent;
+            animation: slideInFromLeft 0.8s ease-out both;
+
+            &:last-child {
+                margin-bottom: 0;
             }
-    
-            div.skill-list {
-                width: 100%;
+
+            .category-header {
                 display: flex;
-                overflow: hidden;
-                overflow-x: scroll;
-    
-                span.skill-item {
+                align-items: center;
+                margin-bottom: 25px;
+                padding-bottom: 15px;
+                border-bottom: 1px solid #e3e8f7;
+
+                .category-icon {
+                    width: 48px;
+                    height: 48px;
+                    color: white;
+                    display: flex;
+                    margin-right: 16px;
+                    border-radius: 12px;
+                    align-items: center;
+                    justify-content: center;
+                    box-shadow: 0 4px 12px rgba(66, 211, 146, 0.2);
+                    background: linear-gradient(135deg, #42d392, #647eff);
+                }
+
+                .category-name {
+                    flex: 1;
+                    margin: 0;
+                    font-size: 20px;
+                    font-weight: 600;
+                    color: #333333;
+                }
+
+                .skill-count {
                     font-size: 14px;
-                    cursor: pointer;
-                    color: #ffffff;
-                    padding: 5px 10px;
-                    margin-right: 15px;
-                    border-radius: 4px;
-                    white-space: nowrap;
-                    margin-bottom: 20px;
-                    border: 2px solid #e3e8f7;
+                    color: #858585;
+                    padding: 4px 12px;
+                    border-radius: 12px;
+                    background: rgba(133, 133, 133, 0.1);
                 }
             }
 
+            .skill-grid {
+                gap: 15px;
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 
-            &:last-child {
-                span.skill-item {
-                    margin-bottom: unset!important;
+                .skill-item {
+                    display: flex;
+                    padding: 12px 16px;
+                    border-radius: 12px;
+                    align-items: center;
+                    animation-delay: var(--item-delay);
+                    background: rgba(133, 133, 133, 0.05);
+                    -webkit-tap-highlight-color: transparent;
+                    border: 1px solid rgba(133, 133, 133, 0.1);
+                    animation: skillItemFadeIn 0.5s ease-out both;
+                    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+                    &:hover {
+                        transform: translateY(-2px);
+                        background: rgba(64, 158, 255, 0.05);
+                        border-color: rgba(64, 158, 255, 0.2);
+                        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+                        .skill-icon .icon-dots span {
+                            background: var(--dominColor);
+                        }
+                    }
+
+                    &:active {
+                        transform: translateY(-1px);
+                    }
+
+                    .skill-icon {
+                        margin-right: 12px;
+                        flex-shrink: 0;
+
+                        .icon-dots {
+                            display: flex;
+                            gap: 3px;
+
+                            span {
+                                width: 6px;
+                                height: 6px;
+                                background: #858585;
+                                border-radius: 50%;
+                                transition: all 0.3s ease;
+
+                                &:nth-child(1) {
+                                    animation: dotPulse 2s ease-in-out infinite;
+                                }
+
+                                &:nth-child(2) {
+                                    animation: dotPulse 2s ease-in-out infinite 0.2s;
+                                }
+
+                                &:nth-child(3) {
+                                    animation: dotPulse 2s ease-in-out infinite 0.4s;
+                                }
+                            }
+                        }
+                    }
+
+                    .skill-name {
+                        font-size: 14px;
+                        font-weight: 500;
+                        color: #666666;
+                        flex: 1;
+                    }
+
+                    .skill-level {
+                        margin-left: 12px;
+                        flex-shrink: 0;
+
+                        .level-bar {
+                            width: 60px;
+                            height: 4px;
+                            background: rgba(133, 133, 133, 0.1);
+                            border-radius: 2px;
+                            overflow: hidden;
+
+                            .level-fill {
+                                height: 100%;
+                                background: linear-gradient(90deg, #42d392, var(--dominColor));
+                                border-radius: 2px;
+                                width: var(--width);
+                                transition: width 1s ease-out;
+                                animation: levelGlow 2s ease-in-out infinite;
+                            }
+                        }
+                    }
                 }
             }
         }
+    }
+}
+
+@keyframes slideInFromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes skillItemFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes dotPulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 0.4;
+    }
+
+    50% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+}
+
+@keyframes levelGlow {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.8;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes tagFadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
     }
 }

@@ -37,7 +37,8 @@ export default {
         avatar: avatar,
         github: 'yichen9247',
         bilibili: '1210947695',
-        description: '一个无名小卒，擅长使用Java、Node等开发技术'
+        email: '865252486@qq.com',
+        description: '一名大一全栈学生，擅长使用Java、Node等开发技术'
     },
 
     project: {
@@ -90,7 +91,7 @@ export default {
             image: OutSor_Image_04,
         }, {
             name: '黑名单管理系统',
-            desc: '技术栈：Vite + Java + Springboot（全栈）',
+            desc: '技术栈：Vite + Springboot（全栈）',
             image: OutSor_Image_05,
         }]
     },
@@ -199,7 +200,7 @@ export default {
             name: 'yichen9247',
             logo: 'WeChat',
         }],
-        data: '各位好，我是Hua，具备全栈开发能力的大一新生，主攻现代前端工程化方向。擅长使用Vue/React生态体系（Vite/Next.js）构建响应式Web应用，对TypeScript工程化与前端状态管理有实战经验。坚持Clean Code原则，熟悉Git协作流程与CI/CD部署，近期正深入Java后端开发以完善全栈能力。我的GitHub持续更新技术实践，欢迎通过Issue或PR进行技术探讨。'
+        data: '各位好，我是Hua，具备全栈开发能力的大一学生，主攻现代前端工程化方向，擅长使用Vue/React生态体系构建响应式Web应用，对TypeScript工程化与前端状态管理有实战经验。坚持Clean Code原则，熟悉Git协作流程与CI/CD部署，近期正深入Java后端开发以完善全栈能力。我的GitHub持续更新技术实践，欢迎通过Issue或PR进行技术探讨。'
     },
 
     footer: {

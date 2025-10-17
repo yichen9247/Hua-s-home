@@ -1,45 +1,312 @@
 div.mobile-home {
-    height: 100vh;
     display: flex;
+    overflow: hidden;
+    min-height: 100vh;
     position: relative;
     align-items: center;
-    flex-direction: column;
     justify-content: center;
+
+    .hero-section {
+        z-index: 2;
+        display: flex;
+        padding: 40px 20px;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+
+        .avatar-container {
+            position: relative;
+            margin-bottom: 30px;
+
+            .avatar-wrapper {
+                width: 120px;
+                height: 120px;
+                overflow: hidden;
+                border-radius: 50%;
+                position: relative;
+                animation: float 3s ease-in-out infinite;
+                cursor: pointer;
+                -webkit-tap-highlight-color: transparent;
+
+                &::before {
+                    content: '';
+                    inset: 0;
+                    z-index: 3;
+                    opacity: 0;
+                    position: absolute;
+                    border-radius: 50%;
+                    pointer-events: none;
+                    transition: opacity 0.3s ease;
+                    background: radial-gradient(circle at var(--touch-x, 50%) var(--touch-y, 50%), rgba(255, 255, 255, 0.2) 0%, transparent 60%);
+                }
+
+                &:active::before {
+                    opacity: 1;
+                }
+
+                img.avatar-img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+                    filter: brightness(1) contrast(1);
+
+                    &:hover {
+                        transform: scale(1.08);
+                        filter: brightness(1.05) contrast(1.1);
+                    }
+
+                    &:active {
+                        transform: scale(0.96);
+                    }
+                }
+
+                .avatar-ring {
+                    inset: -4px;
+                    z-index: -1;
+                    position: absolute;
+                    border-radius: 50%;
+                    animation: rotate 4s linear infinite;
+                    background: linear-gradient(45deg, #42d392, #647eff, #ff6b6b, #42d392);
+                    background-size: 300% 300%;
+                    animation: rotateGradient 4s ease-in-out infinite;
+
+                    &::before {
+                        content: '';
+                        inset: 2px;
+                        z-index: -1;
+                        position: absolute;
+                        border-radius: 50%;
+                        background: #ffffff;
+                    }
+                }
+            }
+        }
+
+        .profile-content {
+            max-width: 320px;
+
+            h1.username {
+                font-size: 36px;
+                font-weight: 700;
+                color: #333333;
+                margin-bottom: 8px;
+                letter-spacing: -0.5px;
+                animation: fadeInUp 0.8s ease 0.2s both;
+            }
+
     
-    div.avatar-box {
-        width: 100px;
-        height: 100px;
-        overflow: hidden;
-        border-radius: 50%;
-        border: 5px solid #ffffff;
-        
-        img.avatar-img {
-            width: 100%;
-            height: 100%;
+            p.userdesc {
+                font-size: 18px;
+                color: #666666;
+                font-weight: 400;
+                overflow: hidden;
+                line-height: 28px;
+                margin-bottom: 24px;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+                animation: fadeInUp 0.8s ease 0.4s both;
+            }
+
+            .social-links {
+                display: flex;
+                gap: 16px;
+                margin-top: 20px;
+                justify-content: center;
+                animation: fadeInUp 0.8s ease 0.6s both;
+
+                .social-link {
+                    width: 44px;
+                    height: 44px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 12px;
+                    color: #ffffff;
+                    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+                    -webkit-tap-highlight-color: transparent;
+                    position: relative;
+                    overflow: hidden;
+                    text-decoration: none;
+
+                    &.github-btn {
+                        background: rgba(36, 41, 46, 0.8);
+                    }
+
+                    &.gitee-btn {
+                        background: rgba(199, 29, 35, 0.8);
+                    }
+
+                    &.netease-btn {
+                        background: rgba(18, 183, 245, 0.8);
+                    }
+
+                    &.bilibili-btn {
+                        background: rgba(251, 114, 153, 0.8);
+                    }
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        width: 0;
+                        height: 0;
+                        border-radius: 50%;
+                        background: rgba(255, 255, 255, 0.3);
+                        transform: translate(-50%, -50%);
+                        transition: width 0.4s ease, height 0.4s ease;
+                    }
+
+                    &:active::before {
+                        width: 80px;
+                        height: 80px;
+                    }
+
+                    &:hover {
+                        transform: translateY(-2px);
+
+                        &.github-btn {
+                            color: #ffffff;
+                            background: rgba(36, 41, 46, 0.9);
+                            box-shadow: 0 4px 12px rgba(36, 41, 46, 0.3);
+                        }
+
+                        &.gitee-btn {
+                            color: #ffffff;
+                            background: rgba(199, 29, 35, 0.9);
+                            box-shadow: 0 4px 12px rgba(199, 29, 35, 0.3);
+                        }
+
+                        &.netease-btn {
+                            color: #ffffff;
+                            background: rgba(18, 183, 245, 0.9);
+                            box-shadow: 0 4px 12px rgba(18, 183, 245, 0.3);
+                        }
+
+                        &.bilibili-btn {
+                            color: #ffffff;
+                            background: rgba(251, 114, 153, 0.9);
+                            box-shadow: 0 4px 12px rgba(251, 114, 153, 0.3);
+                        }
+                    }
+
+                    &:active {
+                        transform: translateY(0);
+                    }
+
+                    svg {
+                        width: 20px;
+                        height: 20px;
+                        transition: transform 0.3s ease;
+                    }
+
+                    &:hover svg {
+                        transform: scale(1.1);
+                    }
+
+                    &:active svg {
+                        transform: scale(0.95);
+                    }
+                }
+            }
         }
     }
 
-    p.user-profile {
-        margin-top: 15px;
-        color: #ffffff;
-        font-weight: bold;
-        text-align: center;
-        word-break: break-all;
+    .scroll-indicator {
+        left: 50%;
+        bottom: 30px;
+        position: absolute;
+        transform: translateX(-50%);
+        animation: fadeInUp 0.8s ease 0.8s both;
+        cursor: pointer;
+        -webkit-tap-highlight-color: transparent;
+
+        .scroll-dot {
+            width: 6px;
+            height: 24px;
+            border-radius: 3px;
+            position: relative;
+            background: rgba(133, 133, 133, 0.3);
+            transition: all 0.3s ease;
+
+            &::before {
+                content: '';
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 10px;
+                position: absolute;
+                border-radius: 3px;
+                background: linear-gradient(180deg, #42d392, #647eff);
+                animation: scroll 2s ease-in-out infinite;
+                transition: transform 0.3s ease;
+            }
+
+            &:hover {
+                background: rgba(133, 133, 133, 0.4);
+                transform: scale(1.1);
+
+                &::before {
+                    animation-duration: 1.2s;
+                }
+            }
+
+            &:active {
+                transform: scale(0.95);
+            }
+        }
+    }
+}
+
+
+@keyframes float {
+    0%,
+    100% {
+        transform: translateY(0px);
     }
 
-    p.username {
-        font-size: 32px;
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+@keyframes rotateGradient {
+    0% {
+        background-position: 0% 50%;
     }
 
-    p.userdesc {
-        width: 75%;
-        line-clamp: 2;
-        font-size: 18px;
-        overflow: hidden;
-        line-height: 28px;
-        display: -webkit-box;
-        -webkit-line-clamp: 2;
-        text-overflow: ellipsis;
-        -webkit-box-orient: vertical;
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes scroll {
+    0% {
+        top: 0;
+        opacity: 1;
+    }
+
+    100% {
+        top: 12px;
+        opacity: 0;
     }
 }

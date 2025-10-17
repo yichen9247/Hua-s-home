@@ -61,3 +61,62 @@ div#application {
         transform: translateY(0);
     }
 }
+
+// 移动端触摸反馈效果
+.mobile-touch-feedback {
+    position: relative;
+    overflow: hidden;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 0;
+        height: 0;
+        background: rgba(255, 255, 255, 0.3);
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        transition: width 0.6s, height 0.6s;
+        pointer-events: none;
+    }
+
+    &:active::after {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+// 页面进入动画
+@keyframes pageSlideIn {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+// 脉冲动画
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 0.8;
+    }
+}
+
+// 光晕动画
+@keyframes glow {
+    0%, 100% {
+        box-shadow: 0 0 5px rgba(100, 126, 255, 0.3);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(100, 126, 255, 0.6);
+    }
+}

@@ -1,13 +1,117 @@
 div.mobile-about {
-    div.user-description {
-        color: #ffffff;
-        
-        p.description {
-            font-size: 18px;
-            text-indent: 2em;
-            line-height: 40px;
-            text-align: justify;
-            word-break: break-all;
+    padding: 60px 20px 40px;
+
+    .about-content {
+        gap: 25px;
+        display: grid;
+        margin: 0 auto;
+        max-width: 500px;
+        grid-template-columns: 1fr;
+
+        .bio-card {
+            padding: 20px;
+            overflow: hidden;
+            position: relative;
+            border-radius: 12px;
+            background: #ffffff;
+            border: 2px solid #e3e8f7;
+            animation: fadeInUp 0.8s ease-out both;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+            .bio-text {
+                z-index: 2;
+                position: relative;
+
+                .description {
+                    margin: 0;
+                    font-size: 16px;
+                    line-height: 1.8;
+                    color: #666666;
+                    text-align: justify;
+                }
+            }
+
+            &:hover {
+                transform: translateY(-2px);
+                border-color: var(--dominColor);
+                box-shadow: 0 4px 12px rgba(64, 158, 255, 0.15);
+
+                .project-icon {
+                    color: var(--dominColor);
+                    transform: translateX(3px);
+                }
+            }
         }
+
+        .contact-section {
+            animation-delay: 0.2s;
+            animation: fadeInUp 0.8s ease-out both;
+
+            .contact-cards {
+                gap: 20px;
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+
+                .contact-card {
+                    padding: 20px;
+                    text-align: center;
+                    border-radius: 12px;
+                    background: #ffffff;
+                    border: 2px solid #e3e8f7;
+                    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+                    &:hover {
+                        transform: translateY(-2px);
+                        border-color: var(--dominColor);
+                        box-shadow: 0 4px 12px rgba(64, 158, 255, 0.15);
+
+                        .contact-icon {
+                            transform: scale(1.05);
+                            color: var(--dominColor);
+                            background: rgba(64, 158, 255, 0.1);
+                        }
+                    }
+
+                    &:active {
+                        transform: translateY(-1px);
+                    }
+
+                    .contact-icon {
+                        width: 48px;
+                        height: 48px;
+                        display: flex;
+                        color: #858585;
+                        align-items: center;
+                        border-radius: 12px;
+                        margin: 0 auto 12px;
+                        justify-content: center;
+                        transition: all 0.3s ease;
+                        background: rgba(133, 133, 133, 0.1);
+
+                        svg {
+                            width: 20px;
+                            height: 20px;
+                        }
+                    }
+
+                    .contact-text {
+                        font-size: 14px;
+                        font-weight: 500;
+                        color: #666666;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }

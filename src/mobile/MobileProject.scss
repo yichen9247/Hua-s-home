@@ -1,38 +1,113 @@
 div.mobile-project {
-    div.project-list {
-        div.project-list-item {
-            width: 100%;
-            height: 110px;
-            display: flex;
-            padding: 15px;
-            margin-top: 25px;
-            color: #ffffff;
-            border-radius: 6px;
-            flex-direction: column;
+    padding: 60px 20px 40px;
+
+    .project-grid {
+        gap: 25px;
+        display: grid;
+        margin: 0 auto;
+        max-width: 500px;
+        grid-template-columns: 1fr;
+
+        .project-card {
+            padding: 20px;
+            overflow: hidden;
+            border-radius: 8px;
+            position: relative;
+            background: #ffffff;
             border: 2px solid #e3e8f7;
-            justify-content: space-between;
+            animation-delay: var(--delay);
+            animation: slideInUp 0.6s ease-out both;
+            -webkit-tap-highlight-color: transparent;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
-            p.item-name {
-                font-size: 18px;
+            &::before {
+                inset: 0;
+                z-index: 3;
+                opacity: 0;
+                content: '';
+                position: absolute;
+                border-radius: 16px;
+                pointer-events: none;
+                transition: opacity 0.3s ease;
+                background: radial-gradient(circle at var(--touch-x, 50%) var(--touch-y, 50%), rgba(255, 255, 255, 0.2) 0%, transparent 50%);
             }
 
-            p.item-desc {
-                line-clamp: 2;
-                font-size: 14px;
-                overflow: hidden;
-                margin-top: 10px;
-                line-height: 22px;
-                text-align: justify;
-                display: -webkit-box;
-                word-break: break-all;
-                -webkit-line-clamp: 2;
-                text-overflow: ellipsis;
-                -webkit-box-orient: vertical;
+            &:active::before {
+                opacity: 1;
             }
 
-            &:first-child {
-                margin-top: 15px;
+            &:hover {
+                transform: translateY(-2px);
+                border-color: var(--dominColor);
+                box-shadow: 0 4px 12px rgba(64, 158, 255, 0.15);
+
+                .project-icon {
+                    color: var(--dominColor);
+                    transform: translateX(3px);
+                }
+            }
+
+            &:active {
+                transform: translateY(-2px);
+            }
+
+            .card-content {
+                z-index: 2;
+                position: relative;
+
+                .card-header {
+                    display: flex;
+                    margin-bottom: 12px;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    .project-name {
+                        flex: 1;
+                        margin: 0;
+                        font-size: 20px;
+                        font-weight: 600;
+                        color: #333333;
+                    }
+
+                    .project-icon {
+                        display: flex;
+                        flex-shrink: 0;
+                        color: #858585;
+                        border-radius: 12px;
+                        align-items: center;
+                        justify-content: center;
+                        transition: transform 0.3s ease;
+
+                        svg {
+                            width: 16px;
+                            height: 16px;
+                        }
+                    }
+                }
+
+                .project-desc {
+                    line-clamp: 2;
+                    font-size: 15px;
+                    line-height: 1.6;
+                    color: #666666;
+                    overflow: hidden;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                }
             }
         }
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
