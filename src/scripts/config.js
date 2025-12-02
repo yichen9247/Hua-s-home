@@ -55,6 +55,14 @@ export default {
             name: 'Desktop Clock',
             repo: 'https://github.com/yichen9247/Desktop-Clock',
             desc: '由于工作室里多出了一台电脑，我一直在思考如何更好地利用它，如果只是让它闲置，未免有些浪费，于是，我决定亲自动手编写一个既美观又实用的桌面时钟'
+        },  {
+            name: 'AwardEngine',
+            repo: 'https://github.com/yichen9247/AwardEngine',
+            desc: '解决传统抽奖痛点，追求极致公平公正，满足多元场景需求，提供定制化服务，提升活动效率与体验'
+        }, {
+            name: 'DailyHot Pro',
+            repo: 'https://github.com/yichen9247/DailyHot-Pro',
+            desc: '一款多平台热点聚合工具，旨在帮助用户一站式获取全网主流平台的实时热门内容，无需逐个打开应用即可快速掌握当下舆论焦点、社会热点与兴趣动态'
         }]
     },
 
@@ -68,6 +76,10 @@ export default {
             name: 'YunChat官方文档',
             link: 'https://doc.im.xiaokolomi.cn',
             desc: '项目YunChat的官方文档，不会搭建或者想要了解本项目的可以进入文档查看'
+        },  {
+            name: '聚全网每日热榜',
+            link: 'https://hot.xiaokolomi.cn',
+            desc: '一款多平台热点聚合工具，旨在帮助用户一站式获取全网主流平台的实时热门内容，无需逐个打开应用即可快速掌握当下舆论焦点、社会热点与兴趣动态'
         }]
     },
 
