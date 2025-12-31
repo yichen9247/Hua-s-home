@@ -43,7 +43,11 @@ const router = createRouter({
 });
 
 router.beforeEach((to, from, next) => {
-    if (!isMobile()) document.querySelector(".tab-content").scrollTo(0, 0);
+    // 确保.tab-content元素存在后再调用scrollTo方法
+    const tabContentElement = document.querySelector(".tab-content");
+    if (!isMobile() && tabContentElement) {
+        tabContentElement.scrollTo(0, 0);
+    }
     next();
 });
 

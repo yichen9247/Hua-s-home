@@ -111,4 +111,24 @@ div.main-container {
             }
         }
     }
+
+    // 媒体查询 - 大屏幕（桌面设备）
+    @media (min-width: 1051px) {
+        div.main-box {
+            display: flex;
+        }
+        div.strat-box {
+            display: none;
+        }
+    }
+
+    // 媒体查询 - 小屏幕（移动设备）
+    @media (max-width: 1050px) {
+        div.main-box {
+            display: none;
+        }
+        div.strat-box {
+            display: block;
+        }
+    }
 }

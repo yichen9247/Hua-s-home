@@ -3,20 +3,19 @@ div.mobile-photos {
 
     .gallery-container {
         margin: 0 auto;
-        max-width: 800px;
 
         .photo-grid {
             gap: 25px;
             display: grid;
             margin: 0 auto;
-            max-width: 500px;
-            grid-template-columns: 1fr;
+            grid-template-columns: repeat(auto-fit, minmax(min(100%, max(250px, 50% - 12.5px)), 1fr));
 
             &.expanded {
                 grid-template-rows: unset;
             }
 
             .photo-item {
+                cursor: pointer;
                 overflow: hidden;
                 position: relative;
                 border-radius: 12px;
@@ -115,6 +114,7 @@ div.mobile-photos {
             .expand-btn {
                 gap: 12px;
                 font-size: 14px;
+                cursor: pointer;
                 color: #333333;
                 font-weight: 500;
                 padding: 12px 24px;

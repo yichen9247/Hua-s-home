@@ -5,12 +5,12 @@ div.mobile-friend {
         gap: 25px;
         display: grid;
         margin: 0 auto;
-        max-width: 500px;
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(min(100%, max(250px, 50% - 12.5px)), 1fr));
 
         .friend-card {
             display: flex;
             padding: 20px;
+            cursor: pointer;
             border-radius: 12px;
             align-items: center;
             background: #ffffff;

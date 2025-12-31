@@ -113,22 +113,22 @@ export default {
         name: '技能',
         data: [{
             name: '前端技术',
-            data: ['Html5', 'CSS3', 'JavaScript', 'Vue', 'React', 'PHP', 'Vite', 'NodeJS', 'NextJS', 'Ajax', 'JQuery', 'Echarts', 'TypeScript']
+            data: ['JavaScript', 'TypeScript', 'PHP、VITE', 'Vue、React', 'HTML5、CSS3', 'Node.JS、Next.JS']
         }, {
             name: '后端技术',
-            data: ['Spring', 'PHP', 'NodeJs', 'Redis', 'MySQL', 'MyBatis', 'RestFul API', 'Java', 'Kotlin']
+            data: ['Restful Api', 'Java、Kotlin', 'MySql、Redis', 'Spring、MyBatis']
         }, {
             name: '软件开发',
-            data: ['Java', 'Kotlin', 'Android', 'HarmonyOS', 'JetPack Compose', 'Uniapp', 'ArkTs', 'ArkUI', 'Compose Desktop']
+            data: ['Java、Kotlin', 'ArkTs、ArkUi', 'Uniapp、Flutter', 'Jetpack Compose', 'Compose Desktop', 'Android、HarmonyOS']
         }, {
             name: '软件设计',
-            data: ['Adobe XD', 'Axure RP', 'PhotoShop']
+            data: ['Axure RP', 'Adobe XD', 'PhotoShop']
         }, {
             name: '编程语言',
-            data: ['Java', 'Kotlin', 'Python', 'PHP', 'C', 'Html5', 'CSS3', 'JavaScript', 'TypeScript', 'GO（基础）', 'C++（基础）', 'Rust（基础）']
+            data: ['PHP', 'C/C++', 'Python', 'JavaScript', 'TypeScript', 'Java、Kotlin', 'HTML5、CSS3']
         }, {
             name: '其它技术',
-            data: ['WebSocket', 'Socket.IO', 'Git（基础）', 'Linux（基础）', 'Gradle（基础）', 'Maven（基础）', 'Docker（基础）', 'AI+']
+            data: ['Git（Gitea）', 'Linux、Docker', 'Gradle、Maven', 'AI（Dify、Ollama）', 'WebSocket（Socket.IO）']
         }]
     },
 
@@ -150,7 +150,7 @@ export default {
     photos: {
         name: '相册',
         data: [{
-            alt: "一带一路暨金砖大赛国赛一等奖",
+            alt: "一带一路金砖全国一等奖 - 高职组",
             src: Photos_skills_Image07
         }, {
             alt: '重庆市江北国际机场 - 荣誉接机',

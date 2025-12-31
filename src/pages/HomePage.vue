@@ -1,11 +1,11 @@
 <template>
     <div class="main-container">
-        <div class="main-box" v-if="!applicationStore.isDeviceMobile">
+        <div class="main-box">
             <div class="content">
                 <UserInfo style="width: 280px; min-width: 280px;"/>
                 <Content/>
             </div>
-            <footer class="footer" v-if="!applicationStore.isDeviceMobile">
+            <footer class="footer">
                 <span>
                     <img class="beian-icon" :src="beianIcon" alt="川公网安备51050402000373号">
                     <a href="https://beian.mps.gov.cn/#/query/webSearch?code=51050402000373" rel="noreferrer" target="_blank">川公网安备51050402000373号</a>
@@ -13,7 +13,7 @@
                 <a href="https://beian.miit.gov.cn" rel="noreferrer" target="_blank">{{ config.footer.icpText }}</a>
             </footer>
         </div>
-        <div class="strat-box" v-else>
+        <div class="strat-box">
             <component v-for="(item, index) in mobileLayoutList" :key="index" :is="item"/>
             <FootBox/>
         </div>

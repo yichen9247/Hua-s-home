@@ -5,10 +5,10 @@ div.mobile-outsor {
         gap: 25px;
         display: grid;
         margin: 0 auto;
-        max-width: 500px;
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(min(100%, max(250px, 50% - 12.5px)), 1fr));
 
         .portfolio-card {
+            cursor: pointer;
             overflow: hidden;
             position: relative;
             border-radius: 12px;
