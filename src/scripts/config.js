@@ -21,6 +21,7 @@ import Photos_skills_Image03 from "@/photo/skills-competition/Image_175600629147
 import Photos_skills_Image04 from "@/photo/skills-competition/Image_1756006307927.jpg"
 import Photos_skills_Image05 from "@/photo/skills-competition/Image_1756107605745.jpg"
 import Photos_skills_Image06 from "@/photo/skills-competition/Image_1756107608390.jpg"
+import Photos_skills_Image07 from "@/photo/skills-competition/Image_1764924393064.jpg"
 
 export default {
     home: {
@@ -149,6 +150,9 @@ export default {
     photos: {
         name: '相册',
         data: [{
+            alt: "一带一路暨金砖大赛国赛一等奖",
+            src: Photos_skills_Image07
+        }, {
             alt: '重庆市江北国际机场 - 荣誉接机',
             src: Photos_skills_Image06
         }, {
