@@ -128,7 +128,7 @@ export default {
             data: ['PHP', 'C/C++', 'Python', 'JavaScript', 'TypeScript', 'Java、Kotlin', 'HTML5、CSS3']
         }, {
             name: '其它技术',
-            data: ['Git（Gitea）', 'Linux、Docker', 'Gradle、Maven', 'AI（Dify、Ollama）', 'WebSocket（Socket.IO）']
+            data: ['Jmeter', 'Appium', 'Git（Gitea）', 'Linux、Docker', 'Gradle、Maven', 'AI（Dify、Ollama）', 'WebSocket（Socket.IO）']
         }]
     },
 
