@@ -22,6 +22,7 @@ import Photos_skills_Image04 from "@/photo/skills-competition/Image_175600630792
 import Photos_skills_Image05 from "@/photo/skills-competition/Image_1756107605745.jpg"
 import Photos_skills_Image06 from "@/photo/skills-competition/Image_1756107608390.jpg"
 import Photos_skills_Image07 from "@/photo/skills-competition/Image_1764924393064.jpg"
+import Photos_skills_Image08 from "@/photo/skills-competition/Image_1764924393065.jpg"
 
 export default {
     home: {
@@ -158,6 +159,9 @@ export default {
         data: [{
             alt: "一带一路金砖全国一等奖 - 高职组",
             src: Photos_skills_Image07
+        }, {
+            alt: "一带一路金砖全国一等奖 - 高职组",
+            src: Photos_skills_Image08
         }, {
             alt: '重庆市江北国际机场 - 荣誉接机',
             src: Photos_skills_Image06
