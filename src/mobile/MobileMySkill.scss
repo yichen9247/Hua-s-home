@@ -37,8 +37,13 @@ div.mobile-mySkill {
                     border-radius: 12px;
                     align-items: center;
                     justify-content: center;
-                    box-shadow: 0 4px 12px rgba(66, 211, 146, 0.2);
                     background: linear-gradient(135deg, #42d392, #647eff);
+
+                    img.icon {
+                        width: 28px;
+                        height: 28px;
+                        background-color: transparent;
+                    }
                 }
 
                 .category-name {

@@ -113,21 +113,27 @@ export default {
         name: '技能',
         data: [{
             name: '前端技术',
+            icon: '/icons/frontend.svg',
             data: ['JavaScript', 'TypeScript', 'PHP、VITE', 'Vue、React', 'HTML5、CSS3', 'Node.JS、Next.JS']
         }, {
             name: '后端技术',
+            icon: '/icons/backend.svg',
             data: ['Restful Api', 'Java、Kotlin', 'MySql、Redis', 'Spring、MyBatis']
         }, {
             name: '软件开发',
+            icon: '/icons/software.svg',
             data: ['Java、Kotlin', 'ArkTs、ArkUi', 'Uniapp、Flutter', 'Jetpack Compose', 'Compose Desktop', 'Android、HarmonyOS']
         }, {
             name: '软件设计',
+            icon: '/icons/design.svg',
             data: ['Axure RP', 'Adobe XD', 'PhotoShop']
         }, {
             name: '编程语言',
+            icon: '/icons/program.svg',
             data: ['PHP', 'C/C++', 'Python', 'JavaScript', 'TypeScript', 'Java、Kotlin', 'HTML5、CSS3']
         }, {
             name: '其它技术',
+            icon: '/icons/other.svg',
             data: ['Jmeter', 'Appium', 'Git（Gitea）', 'Linux、Docker', 'Gradle、Maven', 'AI（Dify、Ollama）', 'WebSocket（Socket.IO）']
         }]
     },
