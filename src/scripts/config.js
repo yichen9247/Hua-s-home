@@ -65,6 +65,10 @@ export default {
             name: 'DailyHot Pro',
             repo: 'https://github.com/yichen9247/DailyHot-Pro',
             desc: '一款多平台热点聚合工具，旨在帮助用户一站式获取全网主流平台的实时热门内容，无需逐个打开应用即可快速掌握当下舆论焦点、社会热点与兴趣动态'
+        }, {
+            name: '校园社团管理系统',
+            repo: 'https://github.com/yichen9247/Smart-Association',
+            desc: '本项目旨在开发一套功能完善、操作便捷的信息化管理平台，以解决当前校园社团管理中存在的信息不透明、沟通效率低、活动组织流程繁琐等问题'
         }]
     },
 
