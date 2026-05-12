@@ -4,6 +4,7 @@ div.layout-project {
         display: flex;
         flex-wrap: wrap;
         padding-bottom: 20px;
+        animation: card-in 1s ease;
         justify-content: space-between;
     
         div.project-list-item {

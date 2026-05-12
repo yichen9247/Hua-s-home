@@ -42,7 +42,6 @@
 
 <script setup>
     import config from '@/scripts/config';
-    import TitleBox from '@/model/TitleBox.vue';
 </script>
 
 <style lang="scss">

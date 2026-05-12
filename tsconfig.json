@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "module": "esnext",
+        "target": "esnext",
+        "moduleResolution": "node",
+        "ignoreDeprecations": "6.0",
+        "paths": {
+            "@/*": [ "src/*" ]
+        },
+        "types": ["vue", "vite/client"]
+    },
+    "include": [
+        "src/**/*",
+        "types/**/*",
+        "auto-imports.d.ts"
+    ] // 类型声明文件夹
+}

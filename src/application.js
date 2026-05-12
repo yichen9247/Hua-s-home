@@ -3,6 +3,8 @@ import { createApp } from 'vue';
 import { createPinia } from 'pinia';
 
 import router from './router';
+import 'element-plus/dist/index.css';
+import ElementPlus from 'element-plus';
 import VueLazyLoad from 'vue3-lazyload';
 import Application from './Application.vue';
 import defaultImage from '@/assets/bg-light.jpg';
@@ -11,6 +13,7 @@ const application = createApp(Application);
 
 application.use(createPinia());
 application.use(router);
+application.use(ElementPlus);
 application.use(VueLazyLoad, {
     error: defaultImage,
     loading: defaultImage

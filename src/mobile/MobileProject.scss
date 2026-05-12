@@ -5,6 +5,7 @@ div.mobile-project {
         gap: 25px;
         display: grid;
         margin: 0 auto;
+        min-height: 100px;
         grid-template-columns: repeat(auto-fit, minmax(min(100%, max(250px, 50% - 12.5px)), 1fr));
 
         .project-card {
